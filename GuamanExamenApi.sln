@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuamanExamenApi", "GuamanExamenApi.csproj", "{8A204D48-EE5E-4B41-BD4E-A80518496B3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A204D48-EE5E-4B41-BD4E-A80518496B3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A204D48-EE5E-4B41-BD4E-A80518496B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A204D48-EE5E-4B41-BD4E-A80518496B3D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8A204D48-EE5E-4B41-BD4E-A80518496B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A204D48-EE5E-4B41-BD4E-A80518496B3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A204D48-EE5E-4B41-BD4E-A80518496B3D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2BDABB8F-D934-4981-84C2-02A363324628}
+	EndGlobalSection
+EndGlobal
