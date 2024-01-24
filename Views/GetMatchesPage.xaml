@@ -3,17 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GuamanExamenApi.Views.GetMatchesPage"
              Title="GetMatchesPage">
+
     <StackLayout>
-        <Button Text="Get UCL Matches" Clicked="Button_Clicked" />
+        <Button Text="Obtener Datos API" Clicked="Button_Clicked" />
+        <Label Text="Partidos mas recientes:" HorizontalOptions="CenterAndExpand" FontSize="20" FontAttributes="Bold" ></Label>
+        <BoxView HeightRequest="25" Color="White"></BoxView>
         <ListView x:Name="MatchesListView">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout>
-                            <Label Text="{Binding HomeTeam}" />
-                            <Label Text="{Binding AwayTeam}" />
-                            <Label Text="{Binding Date}" />
-                            <!-- Agrega más etiquetas según sea necesario -->
+                            <Label Text="{Binding homeTeam.name}" HorizontalOptions="CenterAndExpand"/>
+                            <Label Text="vs" HorizontalOptions="CenterAndExpand" />
+                            <Label Text="{Binding awayTeam.name}" HorizontalOptions="CenterAndExpand"/>
+                            <Label Text="{Binding utcDate}" HorizontalOptions="CenterAndExpand"/>
+                            <BoxView HeightRequest="10" Color="White"></BoxView>
+                            <BoxView Color="Gray" HeightRequest="1" HorizontalOptions="FillAndExpand" Margin="0,5,0,5" />
+                            
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
