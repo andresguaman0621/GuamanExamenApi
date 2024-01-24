@@ -2,6 +2,7 @@ using GuamanExamenApi.Models;
 using System.Net.Http;
 using System.Text.Json;
 using Newtonsoft.Json;
+using GuamanExamenApi.Data;
 
 namespace GuamanExamenApi.Views
 {
@@ -26,7 +27,7 @@ namespace GuamanExamenApi.Views
 
                 using (HttpClient client = new HttpClient())
                 {
-                    
+
                     client.DefaultRequestHeaders.Add("X-Auth-Token", apiKey);
 
                     HttpResponseMessage response = await client.GetAsync(apiUrl);
@@ -34,11 +35,14 @@ namespace GuamanExamenApi.Views
                     if (response.IsSuccessStatusCode)
                     {
                         string jsonResponse = await response.Content.ReadAsStringAsync();
-                        
+
                         var matchesData = JsonConvert.DeserializeObject<Soccer.Rootobject>(jsonResponse);
 
-                        
+
                         MatchesListView.ItemsSource = matchesData.matches;
+
+
+
                     }
 
                 }
@@ -49,6 +53,9 @@ namespace GuamanExamenApi.Views
             }
         }
 
+
+
+        
 
     }
 

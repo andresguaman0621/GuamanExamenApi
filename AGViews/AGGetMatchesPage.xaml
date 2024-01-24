@@ -17,6 +17,9 @@
                             <Label Text="vs" HorizontalOptions="CenterAndExpand" />
                             <Label Text="{Binding awayTeam.name}" HorizontalOptions="CenterAndExpand"/>
                             <Label Text="{Binding utcDate}" HorizontalOptions="CenterAndExpand"/>
+                            
+                            <Image Source="{Binding area.flag}"></Image>
+                            
                             <BoxView HeightRequest="10" Color="White"></BoxView>
                             <BoxView Color="Gray" HeightRequest="1" HorizontalOptions="FillAndExpand" Margin="0,5,0,5" />
                             
@@ -25,5 +28,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <Button Text="Guardar en la BD" ></Button>
     </StackLayout>
 </ContentPage>
